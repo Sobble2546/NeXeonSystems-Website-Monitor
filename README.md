@@ -114,7 +114,7 @@ Once everything is set up and the sites are running, your site monitor page will
 
 ### Latest Updates
 
-- **v1.0.0** (March 2024): Added real-time status monitor with a nice CSS.
+- **v1.0.0** (November 9, 2024): Added real-time status monitor with a nice CSS.
 
 ---------------------------------------------------
 All copyrights goes to NeXeonSystems & Nethuka 2024
