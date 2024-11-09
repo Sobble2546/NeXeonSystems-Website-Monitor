@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+}
+
+header {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #f8fafc;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+.node {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid #334155;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+}
+
+.node:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.node.up {
+    border-color: #22c55e;
+}
+
+.node.down {
+    border-color: #ef4444;
+}
+
+.node-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.up .status-indicator {
+    background: #22c55e;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+}
+
+.down .status-indicator {
+    background: #ef4444;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.4);
+}
+
+.node-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #f8fafc;
+}
+
+.node-status {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.up .node-status {
+    background: rgba(34, 197, 94, 0.1);
+    color: #4ade80;
+}
+
+.down .node-status {
+    background: rgba(239, 68, 68, 0.1);
+    color: #fca5a5;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 2rem;
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
