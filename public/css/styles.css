@@ -6,8 +6,9 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
+    background-image: url("https://wallpapercave.com/wp/F85GHXH.jpg");
+    filter: blur(8px);
+-webkit-filter: blur(8px); /* For Safari compatibility */
     min-height: 100vh;
     display: flex;
     justify-content: center;
