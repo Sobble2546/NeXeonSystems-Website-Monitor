@@ -1,6 +1,3 @@
-Here is the updated **README.md** using code blocks (` ``` `) for formatting the commands and sections:
-
-```markdown
 # NeXeonSystems-Website-Monitor
 
 ## Description
